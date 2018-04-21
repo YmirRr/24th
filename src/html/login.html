@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>用户登录</title>
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+</head>
+
+<body>
+
+
+
+<div class="wrap">
+    <div class="full-width">
+        <!-- 头部复用 -->
+        <div class="header_container"></div>
+
+        <!-- content -->
+        <div class="content_login">
+            <div class="login_bigbox">
+                <div class="login_box">
+                    <div class="login_smallbox">
+                        <h2>
+                            <span></span>
+                            <p>用户登录</p>
+                        </h2>
+                        <p style="font-size:12px;margin-top:10px">如果您拥有账户，请登录。</p>
+                        <ul>
+                            <li>
+                                <span></span>
+                                <input type="text" name="" placeholder="邮箱/手机号">
+                            </li>
+                            <li>
+                                <span></span>
+                                <input type="password" name="" placeholder="密码">
+                            </li>
+                        </ul>
+                        <p class="forget">
+                            <a href="#">忘记您的密码？</a>
+                        </p>
+                        <p class="remenber">
+                            <input type="checkbox" />记住我
+                        </p>
+                        <div class="login_button">
+                            <button><span>登录</span></button>
+                            <a href=""><span>注册</span></a>
+                        </div>
+                        <p style="margin-top: 10px;display:block;width:100%;float:left">
+                            <a href="#" style="color:#58bae9;">使用贵宾卡号登录</a>
+                        </p>
+                        <div class="socialogin">
+                            <p>使用合作网站登录</p>
+                            <a href="#" title="QQ登录">
+                                <img src="/images/qq_login.png" alt="">
+                            </a>
+                            <a href="#" title="微信登录">
+                                <img src="/images/weixin_login.png" alt="">
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    <!-- <script type="text/javascript">
+        $(".carousel").carousel();
+    </script> -->
+
+<script type="text/javascript" src="../lib/requirejs/require.js" data-main="/js/login"></script>
+</body>
+</html>

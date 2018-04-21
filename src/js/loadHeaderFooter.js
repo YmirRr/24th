@@ -19,6 +19,15 @@ define(["jquery"], function($){
                 });
             });
 
+            /* 鼠标移入links改变宽高 */
+            $("ul.links>li>a").hover(function(){
+                // //mouseenter
+                $(this).stop().animate({width:133,height:133,marginLeft:+4,marginTop:+4,padding:10}, 300);
+                // $(this).animate({width:1000}, 2000);
+            },function(){
+                $(this).stop().animate({width:140,height:140,margin:0,padding:12}, 300);
+            });
+
 
             /* 鼠标移入显示二级菜单 */
             $("ul.megamenu>li:lt(8):gt(0)").hover(function(){
@@ -28,7 +37,7 @@ define(["jquery"], function($){
             }, function(){
                 // mouseleave
                 $(this).css("background","none")
-                // $(this).children("div.megapanel").hide();
+                $(this).children("div.megapanel").hide();
 
             });
             // $("div.megapanel").hover(function(){
@@ -39,5 +48,9 @@ define(["jquery"], function($){
             //     $(this).hide();
             // });
         });
+
+        $.ajax("/html/include/footer.html").done(function(data){
+            $(".footer_container").html(data);
+        })
     });
 });
