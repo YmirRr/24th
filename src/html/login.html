@@ -6,6 +6,7 @@
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
 </head>
 
 <body>
@@ -44,8 +45,8 @@
                             <input type="checkbox" />记住我
                         </p>
                         <div class="login_button">
-                            <button><span>登录</span></button>
-                            <a href=""><span>注册</span></a>
+                            <button class="button left"><span>登录</span></button>
+                            <button class="button right"><a href="/html/register.html"><span>注册</span></a></button>
                         </div>
                         <p style="margin-top: 10px;display:block;width:100%;float:left">
                             <a href="#" style="color:#58bae9;">使用贵宾卡号登录</a>
@@ -64,6 +65,9 @@
                 </div>
             </div>
         </div>
+
+         <!-- 尾部复用 -->
+        <div class="footer_container"></div>
     </div>
 </div>
 
@@ -73,6 +77,6 @@
         $(".carousel").carousel();
     </script> -->
 
-<script type="text/javascript" src="../lib/requirejs/require.js" data-main="/js/login"></script>
+<script type="text/javascript" src="../lib/requirejs/require.js" data-main="/js/index"></script>
 </body>
 </html>

@@ -1,0 +1,107 @@
+.register_content{
+    height:755px;
+    padding:0 12px;
+    box-sizing: border-box;
+    font-size:12px;
+    a{
+        color:#999999;
+        text-decoration:none;
+    }
+    ul{
+        list-style:none;
+    }
+
+    h1{
+        display:block;
+        height:68px;
+        line-height:68px;
+        background:#f9f9f9;
+        font-size:24px;
+        color:#666666;
+    }
+    .register_form{
+        border-bottom:1px solid #e4e4e4;
+        .register_fieldest{
+            border:1px solid #cccccc;
+            background:#fff2de;
+            border-radius:4px;
+            padding:15px;
+            margin-bottom:10px;
+            .legend{
+                margin:0;
+                display: block;
+                font-size:16px;
+                color:#666666;
+                padding:15px 0;
+                border-bottom:1px solid #dddddd;
+                margin-bottom:15px;
+            }
+            li{
+                height:59px;
+                margin-bottom:20px;
+                p{
+                    font-weight:bold;
+                    margin-bottom:12px;
+                    color:#666;
+                    span{color:#f00;}
+                }
+                .text{
+                    width: 267px;
+                    height: 33px;
+                    border:1px solid #e6e6e6;
+                }
+                .vilidata{
+                    width: 155px;
+                    height: 33px;
+                    border:1px solid #e6e6e6;
+                    float:left;
+                }
+                .get_vilidata{
+                    width: 112px;
+                    height: 33px;
+                    float:left;
+                    background:#58bae9;
+                    color:#fff;
+                    border:none;
+                }
+            }
+            .control{
+                height:16px;
+                #subs{
+                    margin-right:6px;
+                    float:left;
+                }
+                .subscribe{
+                    float:left;
+                    span{
+                        background:#58bae9;
+                        color:#fff;
+                        padding:5px 10px;
+                    }
+
+                }
+            }
+
+
+
+        }
+        /* .register_bottom{
+            height:179px;
+            border:1px solid #cccccc;
+            background:#fff2de;
+            border-radius:4px;
+            padding:15px;
+            margin-bottom:25px;
+        } */
+    }
+    .return{
+        float:left;
+    }
+    .button{
+        float:right;
+        span{
+            padding:8px 15px;
+        }
+    }
+
+}

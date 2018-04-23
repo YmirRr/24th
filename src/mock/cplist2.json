@@ -1,0 +1,13 @@
+{
+    "res_code":"0",
+    "res_error":"",
+    "res_body":{
+        "products":[
+            {"pid":1, "title1":"Jamieson 健美生 鳕鱼肝油软胶囊","title2":"健脑益智 提高免疫力", "img":"images/cplist2_1.jpg"},
+            {"pid":2, "title1":"naturie imju 薏仁 保湿防晒化妆水","title2":"缓解敏感，美白保湿", "img":"images/cplist2_2.jpg"},
+            {"pid":3, "title1":"龙凤山 有机稻花香米","title2":"五常大米，口感上佳", "img":"images/cplist2_3.jpg"},
+            {"pid":4, "title1":"Frosch 菲洛施 厨房油烟净","title2":"天然苏打，强效去油污", "img":"images/cplist2_4.jpg   "},
+            {"pid":5, "title1":"MICHAEL KORS 迈克高仕 锁头包","title2":"简约时尚，美式风潮","img":"images/cplist2_5.jpg"}
+        ]
+    }
+}

@@ -97,14 +97,14 @@
                     height: 80px;
                     float:left;
                     button{
-                        width: 84px;
-                        height: 60px;
-                        background:#58bae9;
-                        color:#fff;
-                        border:none;
-                        float:left;
+
+                        span{
+                            padding:20px 30px;
+                        }
                     }
-                    a{
+                    .left{float:left;}
+                    .right{float:right;}
+                    /* a{
                         width: 84px;
                         height: 60px;
                         line-height:60px;
@@ -113,7 +113,7 @@
                         border:none;
                         float:right;
                         text-decoration:none;
-                    }
+                    } */
                 }
                 .socialogin{
                     width: 100%;

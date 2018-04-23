@@ -1,0 +1,100 @@
+.wrap{
+    min-height: 800px;
+    height:auto !important;
+    font-size: 12px;
+    overflow:visible;
+    .cart_container{
+        widows: 100%;
+        .sheader{
+            height: 100px;
+            margin-bottom: 20px;
+            border-bottom:2px solid #ccc;
+            .sheader_box{
+                height: 100px;
+                width: 1210px;
+                margin:0 auto;
+                position:relative;
+                .slogo{
+                    width: 155px;
+                    height: 95px;
+                    padding-top: 15px;
+                    float:left;
+                    a{
+                        display: block;
+                        width: 155px;
+                        height: 52px;
+                        margin-bottom: 5px;
+                        img{
+                            width: 155px;
+                            height: 52px;
+                        }
+                    }
+                    .slogin{
+                        display: block;
+                        width:155px;
+                        height:21px;
+                        line-height:200px;
+                        font-weight:bold;
+                        font-size:20px;
+                        overflow:hidden;
+                        background:url(/images/slogin.png) no-repeat;
+                    }
+                }
+                .toplink{
+                    position:absolute;
+                    right: 0px;
+                    bottom:20px;
+                    margin:0;
+                    .links{
+                        height: 47px;
+                        padding-top: 7px;
+                        list-style:none;
+                        li{
+                            float:left;
+                            height:40px;
+                            line-height: 40px;
+                            margin-right: 5px;
+                            a{
+                                color:#999999;
+                                text-decoration:none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .cart_box{
+            max-width:1210px;
+            width:1210px;
+            margin:0 auto;
+            .main{
+                margin:0 auto;
+                min-height: 400px;
+                padding:0;
+                text-align:left;
+                .cart_empty{
+                    margin-top:100px;
+                    padding:130px;
+                    font-size:15px;
+                    text-align:center;
+                    background:url(/images/cart_empty.png) no-repeat center 15px;
+                    p{
+                        color:#999999;
+                        a{
+                            color:#f96e4c;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.sfooter{
+    line-height: 21px;
+    padding:20px 0;
+    font-size: 12px;
+    color:#959595;
+    p{
+        text-align: center;
+    }
+}
