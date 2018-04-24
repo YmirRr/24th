@@ -1,0 +1,13 @@
+{
+    "res_code":"0",
+    "res_error":"",
+    "res_body":{
+        "products":[
+            {"pid":1, "title":"【香港直邮】 加拿大 Jamieson 健美生 姜黄素(胶囊)60粒", "price1":158,"price2":237,"img":"images/jms064642078896_8001.jpg"},
+            {"pid":2, "title":"【香港直邮】 加拿大 Jamieson 健美生 儿童专用维生素D营养液", "price1":188,"price2":282,"img":"images/jms064642069252_8001.jpg"},
+            {"pid":3, "title":"【香港直邮】 加拿大 Jamieson 健美生 维生素C泡腾片-橙味 10片", "price1":88,"price2":132,"img":"images/jms064642067357_8001.jpg"},
+            {"pid":4, "title":"【香港直邮】 加拿大 Jamieson 健美生 儿童多维和矿物质复合片 60片", "price1":129,"price2":193.5,"img":"images/jms064642078773-8f0535.jpg   "},
+            {"pid":5, "title":"【香港直邮】 加拿大 Jamieson 健美生 亚麻籽油软胶囊 200粒","price1":174,"price2":220.5,"img":"images/jms064642062345-a0df1c.jpg"}
+        ]
+    }
+}

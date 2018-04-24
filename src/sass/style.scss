@@ -1,11 +1,10 @@
 *{
     margin:0;
     padding:0;
-    /* box-sizing:; */
 }
-body{
-    color:#999;
-}
+
+a{color:#999;}
+a:hover{color:#000;}
 
 .button{
     span{
@@ -24,7 +23,8 @@ body{
 }
 
 .header_container{
-    height: 236px;
+    height: 238px;
+    margin-bottom:12px;
     /* overflow:hidden; */
 
     .welcome_msg{
@@ -173,7 +173,7 @@ nav{
     padding:0 12px;
     height:44px;
 
-    margin:0 auto;
+    margin: auto;
 }
 nav .nav{
     height:44px;
@@ -363,7 +363,7 @@ nav .nav ul li:nth-child(2) .megapanel .right ul li:nth-child(12){
 /* banner */
 
 .banner{
-    padding:12px;
+    padding:0 12px;
 }
 
 /* content */
@@ -575,6 +575,32 @@ nav .nav ul li:nth-child(2) .megapanel .right ul li:nth-child(12){
                     }
                 }
             }
+        }
+    }
+}
+
+.footer_container{
+    float: left;
+}
+/* 面包屑 */
+.breadcrumbs{
+    padding:3px 0 15px;
+    font-size:12px;
+    height:33px;
+    line-height:1.25;
+    ul{
+        li{
+            list-style:none;
+            float:left;
+            span{
+                padding:10px;
+            }
+        }
+        .home{
+            a{
+                color:#58BAE9;
+            }
+
         }
     }
 }

@@ -1,0 +1,20 @@
+{
+    "res_code":"0",
+    "res_error":"",
+    "res_body":{
+        "products":[
+            {"pid":1, "title":"日本 SANADA精工 管道发泡清洁剂 橘子精油 CN1381", "price1":16,"price2":9.9,"img":"images/sanada_pipeline-orange_oil_01.jpg"},
+            {"pid":2, "title":"德国 BRITA 碧然德 过滤水壶芯第二代 6+2个", "price1":410,"price2":328,"img":"images/brita-heart1.jpg"},
+            {"pid":3, "title":"德国 BRITA 碧然德 marella xl号蓝色滤水壶", "price1":322.5,"price2":178,"img":"images/qqpicture20150923102431.jpg"},
+            {"pid":4, "title":"德国 Frosch菲洛施清洗果蔬洗洁精 500ml", "price1":58,"price2":39.9,"img":"images/frosch-sensitive-vittamine2.jpg   "},
+            {"pid":5, "title":"德国 Frosch菲洛施高效洗碗液（柠檬）750ml","price1":76,"price2":39.9,"img":"images/frosch-spul-mittel1.jpg"},
+            {"pid":6, "title":"日本 kao 花王 酵素超全效洗衣粉 除菌+消臭+漂白 900g","price1":55,"price2":20,"img":"images/kao_js-xyy__.jpg"},
+            {"pid":7, "title":"日本汉方 清洗果蔬菜贝壳粉 去除农药残留/除菌/杀菌/除防腐剂90克","price1":88,"price2":45,"img":"images/japanese-kampo-shell-powder_01.jpg"},
+            {"pid":8, "title":"日本 PITTA 防花粉灰尘过敏抗菌口罩 黑灰色 3枚","price1":88,"price2":35,"img":"images/3001315_8001.jpg"},
+            {"pid":9, "title":"日本 lion 狮王 TOP屋内晾干洗衣液 820ml ","price1":76,"price2":49,"img":"images/top_01.jpg"},
+            {"pid":10, "title":"德国 Frosch 菲洛施厨房油烟净(苏打) 500ml","price1":68,"price2":49,"img":"images/frosch-soda-reiniger2.jpg"},
+            {"pid":11, "title":"日本 SANADA精工 水槽粘液洗洁精 CN1416","price1":16,"price2":9.9,"img":"images/sanada_01_1.jpg"},
+            {"pid":12, "title":"德国 Frosch 菲洛施洁厕灵 (柠檬) 750ml","price1":68,"price2":49,"img":"images/frosch-wc-reiniger1.jpg"}
+        ]
+    }
+}

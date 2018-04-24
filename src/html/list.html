@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="/css/list.css">
+</head>
+<body>
+
+<div class="wrap">
+    <div class="full-width">
+        <!-- 头部复用 -->
+        <div class="header_container"></div>
+
+        <!-- content -->
+        <div class="content">
+            <div class="main">
+                <div>
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li class="home">
+                                <a href="/index.html">主页</a>
+                                <span>/</span>
+                            </li>
+                            <li class="category_jjsh"><span>家居生活</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <div class="magicat_container">
+                        <div class="cat_head"><span>家居生活</span></div>
+                        <ul class="magicat">
+                            <li><a href="#">清洁用品</a></li>
+                            <li><a href="#">餐饮厨具</a></li>
+                            <li><a href="#">生活电器</a></li>
+                            <li><a href="#">厨房电器</a></li>
+                            <li><a href="#">生活日用</a></li>
+                            <li><a href="#">数码办公</a></li>
+                            <li><a href="#">家装软饰</a></li>
+                        </ul>
+                    </div>
+                    <div class="block_compare">
+                        <div class="block_title">
+                            <span>我要对比的商品</span>
+                        </div>
+                        <div class="block_content">
+                            <p class="empty">您没有可比较的项目。</p>
+                        </div>
+                    </div>
+                    <div class="block">
+                        <div class="block_title" style="background:url(/images/icons.png) no-repeat 0 -1430px;">
+                            <span>为您的健康与安全而选择</span>
+                        </div>
+                        <div class="block_content">
+                            <p>人是最重要的资产。您的健康与安全具有至高的重要性，除了您自己，您还可以影响您的家庭成员、同事、客户、朋友以及更多工作与生活伙伴。因此我们提供产品与服务时，将健康与安全视为至上的要素</p>
+                        </div>
+                        <div class="block_content">
+                            <p>我们在为您提供产品享用体验的同时，确保产品具有不折不扣的品质，以及服务效率，这就是我们的创新服务理念。如您所见，在全时在线体系的各系商品中，良好的价格优势与品质并不互相排斥。全时在线将这两个看似矛盾的对立面完美地结合在一起，向您展示了我们对服务的独到诠释。
+                        </div>
+                        <div class="block_content">
+                            <p>有没有人告诉你，商业可以是透明的？我们缩减、整合了供应链（SCM ）的环节，让商业更加透明。这是我们的商业新主张。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col_main">
+                    <div class="col_main_title">
+                        <h1>家居生活</h1>
+                    </div>
+                    <div class="col_main_products">
+                        <div class="toolbar">
+                            <div class="sorter">
+                                <p class="view_mode">
+                                    <label>浏览模式:</label>
+                                    <span>网格</span>
+                                    <a href="#">列表</a>
+                                </p>
+                                <div class="sort_by">
+                                    <label>排序</label>
+                                    <div class="sbHolder">
+                                        <a href="#" class="sbToggle"></a>
+                                        <a href="#" class="sbSelector">时间</a>
+                                        <ul class="sbOptionsq">
+                                            <li><a href="">
+                    时间                </a></li>
+                    <li><a href="">
+                    价格                </a></li>
+                    <li><a href="">
+                    人气                </a></li>
+                    <li><a href="">
+                    销量                </a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="direction">
+                                    <img src="/images/i_asc_arrow.gif" >
+                                </a>
+                                </div>
+
+
+                                <div class="limiter">
+                                    <label >显示 每页</label>
+                                    <div class="sbHolder">
+                                        <a href="#" class="sbToggle"></a>
+                                        <a href="#" class="sbSelector">30</a>
+                                        <ul class="sbOptionsq">
+                                            <li><a href="">                    30                </a></li>
+                                            <li><a href="">                    60                </a></li>
+                                            <li><a href="">                    90                </a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="pager_">
+                                    <p class="amount">
+                            项目 1 到 30 共 1300个                    </p>
+                                    <div class="pages">
+                                        <strong>页面：</strong>
+                                        <ol>
+                                            <li class="current">1</li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#"><img src="/images/pager_arrow_right.gif" alt=""></a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <ul class="jjsh_products_grid"></ul>
+                        <div class="toolbar">
+                            <div class="sorter">
+                                <p class="view_mode">
+                                    <label>浏览模式:</label>
+                                    <span>网格</span>
+                                    <a href="#">列表</a>
+                                </p>
+                                <div class="sort_by">
+                                    <label>排序</label>
+                                    <div class="sbHolder">
+                                        <a href="#" class="sbToggle"></a>
+                                        <a href="#" class="sbSelector">时间</a>
+                                        <ul class="sbOptionsq">
+                                            <li><a href="">
+                    时间                </a></li>
+                    <li><a href="">
+                    价格                </a></li>
+                    <li><a href="">
+                    人气                </a></li>
+                    <li><a href="">
+                    销量                </a></li>
+                                        </ul>
+                                    </div>
+                                    <a href="#" class="direction">
+                                    <img src="/images/i_asc_arrow.gif" >
+                                </a>
+                                </div>
+
+
+                                <div class="limiter">
+                                    <label >显示 每页</label>
+                                    <div class="sbHolder">
+                                        <a href="#" class="sbToggle"></a>
+                                        <a href="#" class="sbSelector">30</a>
+                                        <ul class="sbOptionsq">
+                                            <li><a href="">                    30                </a></li>
+                                            <li><a href="">                    60                </a></li>
+                                            <li><a href="">                    90                </a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="pager_">
+                                    <p class="amount">
+                            项目 1 到 30 共 1300个                    </p>
+                                    <div class="pages">
+                                        <strong>页面：</strong>
+                                        <ol>
+                                            <li class="current">1</li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#"><img src="/images/pager_arrow_right.gif" alt=""></a></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 尾部复用 -->
+        <div class="footer_container"></div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/index"></script>
+
+<!-- 家居生活商品模板 -->
+<script type="text/html" id="jjsh_temp">
+    {{ each products prod }}
+        <li class="jjsh_product">
+            <a href="#">
+                <img src="/{{prod.img}}" class="img-responsive"/>
+            </a>
+            <div class="ic_caption">
+                <div class="title_box">
+                    <p>{{prod.title}}</p>
+                </div>
+                <div class="price_box">
+                    <p>
+                        <span class="old_price">
+                    ￥{{prod.price1.toFixed(2)}}                </span>
+                        <span class="special_price">￥{{prod.price2.toFixed(2)}}</span>
+                    </p>
+                </div>
+                <div class="add_to_cart">
+                    <p><button type="button" tytle="添加到购物车" class="button"><span>添加到购物车</span></button></p>
+                </div>
+            </div>
+            <ul>
+                <li><a href="#">收藏该商品</a></li>
+                <li style="padding:0 12px;color:#999;">|</li>
+                <li><a href="#">加入商品对比</a></li>
+            </ul>
+        </li>
+    {{/each}}
+</script>
+
+
+
+</body>
+</html>
