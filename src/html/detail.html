@@ -25,36 +25,48 @@
                                 <a href="/index.html">主页</a>
                                 <span>/</span>
                             </li>
-                            <li class="category_jjsh"><span>【香港直邮】 加拿大 Jamieson 健美生 鳕鱼肝油软胶囊</span></li>
+                            <li class="category_jjsh"><span id="pTitle">【香港直邮】 加拿大 Jamieson 健美生 鳕鱼肝油软胶囊</span></li>
                         </ul>
                     </div>
 
                     <div class="product-essential">
                         <div class="product_img_box">
-                            <p class="product_image">
+                           <!--  <p class="product_image">
                                 <a href="#" class="zoomBtn"><span>Zoom</span></a>
                             </p>
+                            <p class="zoom-notice">点击上方图片预览大图</p>
+                             -->
+                            <p class="product_image">
+                                <img id="pImg" src="/images/big.jpg" data-zoom-image="/images/big.jpg" class="zoom" style="width:100%">
+                                <a href="#" class="zoomBtn" style="z-index:999;"><span>Zoom</span></a>
+                            </p>
+
                             <p class="zoom-notice">点击上方图片预览大图</p>
                             <div class="thumbbox">
                                 <div class="jcarousel-container">
                                     <div class="jcarousel-clip">
-                                        <ul class="jcarousel-list">
-                                            <li><a href="#"><img src="/images/jms064642022363-ddc79f.jpg" alt=""></a></li>
+                                        <ul class="jcarousel-list" id="jcarousel_list">
+                                            <li>
+                                                <a href="#" data-image="/images/big.jpg" data-zoom-image="/images/big.jpg">
+                                                    <img  src="/images/small.jpg" alt="">
+                                                </a>
+                                            </li>
                                         </ul>
                                     </div>
                                     <div class="jcarousel-prev"></div>
                                     <div class="jcarousel-next"></div>
                                 </div>
                             </div>
+
+
                         </div>
                         <div class="productDetailBox">
                             <form action="">
                                 <div class="product-shop">
                                     <div class="product_left">
                                         <div class="product-name">
-                                            <h1><a href="#"></a>
-                                            【香港直邮】 加拿大  Jamieson 健美生 儿童 鳕鱼肝油软胶囊 100粒
-                                            </h1>
+                                            <span id="pid" style="display: none;">1</span>
+                                            <h1 id="pTitle"><a href="#" ></a>【香港直邮】 加拿大  Jamieson 健美生 儿童 鳕鱼肝油软胶囊 100粒</h1>
                                         </div>
 
                                         <div class="activites_list">
@@ -144,8 +156,41 @@
                         <div class="sidebar">
                             <div class="product-view">
                                 <h4>看了又看</h4>
+                                <ul class="userBuyView1"></ul>
                             </div>
-                            <div class="product-view"></div>
+                            <div class="product-view">
+                                <h4>同类热销排行</h4>
+                                <ul class="userBuyView2"></ul>
+                            </div>
+                        </div>
+                        <div class="detail_main">
+                            <div class="product-collateral">
+                                <div class="tabs">
+                                    <ul class="product-tabs">
+                                        <li class="first active"><a href="#">产品描述</a></li>
+                                        <li><a href="#">规格参数</a></li>
+                                        <li><a href="#">产品标签</a></li>
+                                        <li><a href="#">产品评价</a></li>
+                                        <li class="last"><a href="#">配送指南</a></li>
+                                    </ul>
+                                    <div class="product-tabs-content">
+                                        <img src="/images/jms064642022363_01.jpg" >
+                                        <img src="/images/jms064642022363_02.jpg" >
+                                        <img src="/images/jms064642022363_03.jpg" >
+                                        <img src="/images/jms064642022363_04.jpg" >
+                                        <img src="/images/jms064642022363_05.jpg" >
+                                        <img src="/images/jms064642022363_06.jpg" >
+                                        <img src="/images/jms064642022363_07.jpg" >
+                                        <img src="/images/jms064642022363_08.jpg" >
+                                        <img src="/images/jms064642022363_09.jpg" >
+                                        <img src="/images/jms064642022363_10.jpg" >
+                                        <img src="/images/pricetips.jpg" >
+                                        <img src="/images/zhiyou.jpg" >
+                                        <img src="/images/footer.jpg" >
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -163,7 +208,8 @@
 
 
 
-<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/index"></script>
+<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/detail"></script>
+
 
 <script type="text/html" id="xgtj_temp">
     {{ each products prod }}
@@ -182,5 +228,7 @@
         </li>
     {{/each}}
 </script>
+
+
 </body>
 </html>

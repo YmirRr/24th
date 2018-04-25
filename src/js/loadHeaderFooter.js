@@ -40,13 +40,23 @@ define(["jquery"], function($){
                 $(this).children("div.megapanel").hide();
 
             });
-            // $("div.megapanel").hover(function(){
-            //     // mouseenter
-            //     $(this).show();
-            // }, function(){
-            //     // mouseleave
-            //     $(this).hide();
-            // });
+            $("ul.megamenu>li").hover(function(){
+                // mouseenter
+                $(this).css("background","#3399cc")
+            }, function(){
+                // mouseleave
+                $(this).css("background","none")
+            });
+
+            //页面滚动产生吸顶效果
+            $(document).scroll(function(e){
+                if((document.documentElement.scrollTop || document.body.scrollTop) > 192)
+                    $("nav").css({"position":"fixed","top":0,"width":"100%" ,"background":"#58bae9"});
+            });
+            $(document).scroll(function(e){
+                if((document.documentElement.scrollTop || document.body.scrollTop) < 192)
+                    $("nav").css({"position":"static","width":"100%" ,"background":"#fff"});
+            });
         });
 
         $.ajax("/html/include/footer.html").done(function(data){

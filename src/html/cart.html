@@ -31,6 +31,9 @@
                         <p>您的购物车内没有物品。</p>
                         <p>单击<a href="/index.html">这里</a>来继续购物。</p>
                     </div>
+                    <div class="cart prod_list">
+
+                    </div>
                 </div>
             </div>
         </div>
@@ -39,5 +42,88 @@
         <p>© 2018 24th.com, 版权所有.
 全时在线(中国)客户服务中心 4000-900-999     ICP备-13016379</p>
     </div>
+
+<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/cart"></script>
+
+<script type="text/html" id="prod_list_temp">
+        <div class="page-title-box">
+            <div class="page_left">购物车</div>
+            <div class="page_right">
+                <span class="bg"></span>
+                <ul>
+                    <li style="color:#d22147;">购物车</li>
+                    <li>确认订单</li>
+                    <li>支付</li>
+                    <li>完成</li>
+                </ul>
+            </div>
+        </div>
+
+        <table class="cart_title" style="width:100%">
+            <thead>
+                <tr>
+                    <th width="5%" align="center">选择</th>
+                    <th width="45%" align="center">商品</th>
+                    <th width="10%" align="center">单价（元）</th>
+                    <th width="15%" align="center">数量</th>
+                    <th width="15%" align="center">金额（元）</th>
+                    <th width="10%" align="center">操作</th>
+                </tr>
+            </thead>
+        </table>
+        <table class="cart_table">
+            <thead>
+                <tr>
+                    <td colspan="99">
+
+                        <h4><label><input type="checkbox" id="ck_all">青岛1号仓</label></h4>
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="cart_body">
+                {{each products prod}}
+                <tr>
+                    <td width="3%" class="lb"><input type="checkbox" class="ck_prod"></td>
+                    <td width="47%" class="pTitle">
+                        <a href="#"><img class="prod_img" src="{{prod.img}}"></a>
+                        <h2><a href="#">{{prod.title}}</a></h2>
+                    </td>
+                    <td width="10%" class="price">￥{{prod.price}}</td>
+                    <td width="15%" class="input_group">
+                        <div class="input_wrap">
+                            <span class="input-group-addon minus" data-id="{{prod.pid}}">-</span>
+                            <input class="amount" type="text" value="{{prod.amount}}" data-id="{{prod.pid}}" class="form-control amount">
+                            <span class="input-group-addon add" data-id="{{prod.pid}}">+</span>
+                        </div>
+                    </td>
+                    <td width="15%" class="sub">￥{{(prod.price * prod.amount).toFixed(2)}}</td>
+                    <td width="10%" class="cart_del"><a href="javascript:void(0);" class="del" data-id="{{prod.pid}}"></a></td>
+                </tr>
+                {{/each}}
+            </tbody>
+        </table>
+
+        <div class="cart-collaterals">
+            <ul>
+                <li id="cart_total">
+                    已选商品
+                    <span id="total_qty">0</span>
+                    件&nbsp;&nbsp;&nbsp;&nbsp;总价(不含运费)：
+                    <span id="quote_totals">
+                        <span class="total">￥0.00</span>
+                    </span><br>
+                    <div class="total_info">
+                        商品总价：
+                        <span id="quote_subtotals" class="total">￥0.00</span>
+                        &nbsp;&nbsp;订单税费：
+                        <span id="quote_tax">￥0.00</span>
+                        &nbsp;&nbsp;活动优惠：
+                        <span id="quote_discount">￥0.00</span>
+                    </div>
+                </li>
+                <li class="jz"><a href="#">结账</a></li>
+            </ul>
+        </div>
+    </script>
 </body>
 </html>

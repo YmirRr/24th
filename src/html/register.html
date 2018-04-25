@@ -22,13 +22,13 @@
         <div class="register_content">
             <h1>使用手机注册</h1>
             <div class="register_form">
-                <form action="">
+                <form action="/php/register.php" method="post">
                     <div class="register_fieldest">
                         <h2 class="legend">个人信息</h2>
                         <ul>
                             <li>
                                 <p>手机号<span> *</span></p>
-                                <input type="text" class="text">
+                                <input type="text" name="username" class="text">
                             </li>
                             <li>
                                 <p>验证码<span> *</span></p>
@@ -57,11 +57,13 @@
                             <li>
                                 <div class="field" style="float:left;margin-right:10px">
                                     <p>密码<span> *</span></p>
-                                    <input type="password" name="" class="text">
+                                    <input type="password" name="password
+password" class="text">
                                 </div>
                                 <div class="field" style="float:left">
                                     <p>确认密码<span> *</span></p>
-                                    <input type="password" name="" class="text">
+                                    <input type="password" name="
+password" class="text">
                                 </div>
                             </li>
 

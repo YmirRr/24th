@@ -3,6 +3,7 @@
     height:auto !important;
     font-size: 12px;
     overflow:visible;
+    color:#333;
     .cart_container{
         widows: 100%;
         .sheader{
@@ -82,6 +83,212 @@
                         color:#999999;
                         a{
                             color:#f96e4c;
+                        }
+                    }
+                }
+                .prod_list{
+                    .page-title-box{
+                        height: 50px;
+                        margin-bottom: 10px;
+                        position:relative;
+                        .page_left{
+                            float: left;
+                            height: 50px;
+                            font-size: 26px;
+                        }
+                        .page_right{
+                            position:absolute;
+                            right:-34px;
+                            float: right;
+                            span{
+                                position:absolute;
+                                display: block;
+                                right:34px;
+                                width: 306px;
+                                height: 20px;
+                                background: url('/images/m-setp.png');
+                            }
+                            ul{
+                                font-size:14px;
+                                padding:20px 0 0;
+                                text-align: center;
+
+                                li{
+                                    color:#ddd;
+                                    width: 96px;
+                                    height: 19px;
+                                    list-style:none;
+                                    float:left;
+                                }
+                            }
+                        }
+                    }
+
+                    .cart_title{
+                        height: 20px;
+                        line-height:20px;
+                        background: #efefef;
+                        border: 1px solid #e6e6e6;
+                        border-collapse: collapse;
+                        border-bottom: none;
+                        th{
+                            font-weight: normal;
+                            color:#666;
+                            text-align:center;
+                            padding: 8px;
+                            border:1px solid #e6e6e6;
+                        }
+                    }
+                    .cart_table{
+                        width: 100%;
+                        thead{
+                            tr{
+                                td{
+                                    padding:15px 0 !important;
+                                    h4{
+                                        float: left;
+                                        margin-left: 20px;
+                                        font-size: 17px;
+                                        line-height: 30px;
+                                        color: #333;
+                                        font-weight: bolder;
+                                        input{
+                                            margin-right:15px;
+                                            cursor:pointer;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .cart_body{
+                            width: 100%;
+                            tr{
+                                border-top: 1px solid #eee;
+                                border-bottom: 1px solid #eee;
+                                td{
+                                    padding:15px 0;
+                                }
+                                .lb{
+                                    padding:15px 0;
+                                    input{
+                                        margin-left:20px;
+                                    }
+                                }
+                                .pTitle{
+                                    .prod_img{
+                                        border:1px solid #eee;
+                                        display: block;
+                                        width: 80px;
+                                        height: 80px;
+                                        float:left;
+                                        .prod_img{
+                                            width: 100%;
+                                        }
+                                    }
+                                    h2{
+                                        margin:0;
+                                        a{
+                                            font-size: 13px;
+                                            color:#333;
+                                        }
+                                    }
+                                }
+                                .price{
+                                    text-align:center;
+                                    font-size:16px;
+                                    span{
+                                        padding:15px 0;
+                                    }
+                                }
+                                .input_group{
+                                    text-align:center;
+
+                                    .input_wrap{
+                                        margin:0 auto;
+                                        height:34px;
+                                        width: 122px;
+                                        span{
+                                            width: 26px;
+                                            height: 32px;
+                                            float: left;
+                                            border-radius:0;
+                                            background: #fff;
+                                            text-align: center;
+                                            padding: 5px;
+                                            line-height: 20px;
+                                        }
+                                        input{
+                                            float: left;
+                                            width: 60px;
+                                            height: 32px;
+                                            border-radius:0;
+                                            text-align: center;
+
+                                        }
+                                    }
+                                }
+                                .sub{
+                                    color: #be0026;
+                                    font-weight: bolder;
+                                    text-align: center;
+                                    font-size: 16px;
+                                }
+                                .cart_del{
+                                    text-align: center;
+                                    a{
+                                        padding:10px;
+                                        display: inline-block;
+                                        width: 16px;
+                                        height: 16px;
+                                        background: url('/images/car-del.png') no-repeat center center;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+
+                    .cart-collaterals{
+                        margin-top: 20px;
+                        height: 87px;
+                        border:1px solid #e6e6e6;
+                        ul{
+                            height:85px;
+                            padding: 10px;
+                            list-style:none;
+                            #cart_total{
+                                line-height: 30px;
+                                float:left;
+                                text-align:right;
+                                width:75% ;
+                                font-size: 14px;
+                                span{
+                                    color:#f00;
+                                    font-size: 18px;
+                                    font-weight: bold;
+                                }
+                                div{
+                                    font-size: 12px;
+                                    line-height:30px;
+                                    span{
+                                        font-size:12px;
+                                    }
+                                }
+
+                            }
+                            .jz{
+                                width: 20%;
+                                text-align: center;
+                                float:right;
+                                a{
+                                    text-decoration:none;
+                                    display: block;
+                                    font-size: 18px;
+                                    color:#fff;
+                                    padding:20px 50px;
+                                    background: #D22147;
+                                }
+                            }
                         }
                     }
                 }

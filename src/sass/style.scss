@@ -172,8 +172,8 @@ a:hover{color:#000;}
 nav{
     padding:0 12px;
     height:44px;
-
     margin: auto;
+    z-index:9999;
 }
 nav .nav{
     height:44px;
@@ -265,7 +265,7 @@ nav .nav ul li .megapanel .left .left_l{
     float:left;
     text-align:left;
 }
-nav .nav ul li .megapanel .left .left_l .level1{
+nav .nav ul li .megapanel .left  .level1{
     display:block;
     height:34px;
     line-height:34px;
@@ -274,7 +274,7 @@ nav .nav ul li .megapanel .left .left_l .level1{
     color:#333;
     border-bottom:#eaeaea 1px solid;
 }
-nav .nav ul li .megapanel .left .left_l div a{
+nav .nav ul li .megapanel .left  .marg a{
     display:inline-block;
     height:14px;
     line-height:14px;
@@ -287,14 +287,12 @@ nav .nav ul li .megapanel .left .left_m{
     width:200px;
     height:248px;
     margin-right:40px;
-    background:#534455;
     float:left;
 
 }
 nav .nav ul li .megapanel .left .left_r{
     width:200px;
     height:136px;
-    background:#534455;
     float:left;
 
 }
@@ -523,10 +521,8 @@ nav .nav ul li:nth-child(2) .megapanel .right ul li:nth-child(12){
                             width: 100%;
                         }
                     }
-
-                    a:first-child{
+                    .active{
                         display: block;
-
                     }
 
                 }
@@ -560,8 +556,13 @@ nav .nav ul li:nth-child(2) .megapanel .right ul li:nth-child(12){
                 margin-bottom: 5px;
                 border:1px solid #ddd;
                 color:#999;
+                overflow:hidden;
                 img{
                     width: 98%;
+                }
+                img:hover{
+                    transition: all 200ms ease-in-out 0s;
+                    transform:scale(1.05);
                 }
                 .des{
                     position:absolute;
