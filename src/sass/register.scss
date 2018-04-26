@@ -19,6 +19,20 @@
         font-size:24px;
         color:#666666;
     }
+    .err_msg{
+        display: none;
+        width: 100%;
+        overflow:hidden;
+        .e_m{
+            color:#df280a;
+            background: #faebe7 url('/images/i_msg_error.gif') no-repeat 10px 19px;
+            border:1px solid #f16048;
+            margin-bottom: 10px;
+            padding:18px 18px 18px 32px;
+            font-weight: bold;
+            li{margin-bottom: 3px;}
+        }
+    }
     .register_form{
         border-bottom:1px solid #e4e4e4;
         .register_fieldest{
@@ -35,6 +49,31 @@
                 padding:15px 0;
                 border-bottom:1px solid #dddddd;
                 margin-bottom:15px;
+            }
+            .yzm{
+                height:auto;
+                overflow:hidden;
+                .tuxing{
+                    width: 268px;
+                    height: 44px;
+                    line-height: 44px;
+                    border:1px solid #d5d5d5;
+                    background: #fafafa;
+                    margin-bottom: 10px;
+                    .left{
+                        width: 42px;
+                        height: 42px;
+                        padding-top: 9px;
+                        float:left;
+                        i{
+                            display: inline-block;
+                            width: 23px;
+                            height: 23px;
+                            margin-left: 10px;
+                            background:url('/images/widget_combine.png') no-repeat 0 0;
+                        }
+                    }
+                }
             }
             li{
                 height:59px;
@@ -85,14 +124,6 @@
 
 
         }
-        /* .register_bottom{
-            height:179px;
-            border:1px solid #cccccc;
-            background:#fff2de;
-            border-radius:4px;
-            padding:15px;
-            margin-bottom:25px;
-        } */
     }
     .return{
         float:left;

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <title>用户注册</title>
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/css/register.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
 </head>
 
@@ -19,20 +19,28 @@
         <div class="header_container"></div>
 
         <!-- content -->
+        <form action="/php/register.php" method="post" class="register_form_">
         <div class="register_content">
             <h1>使用手机注册</h1>
+            <div class="err_msg">
+                <ul class="e_m"></ul>
+            </div>
             <div class="register_form">
-                <form action="/php/register.php" method="post">
+
                     <div class="register_fieldest">
                         <h2 class="legend">个人信息</h2>
                         <ul>
                             <li>
                                 <p>手机号<span> *</span></p>
-                                <input type="text" name="username" class="text">
+                                <input type="text" id="phone" name="phone" class="text">
                             </li>
-                            <li>
+                            <li class="yzm">
                                 <p>验证码<span> *</span></p>
-                                <input type="text" name="" class="text">
+                                <div class="tuxing">
+                                    <span class="left"><i></i></span>
+                                    <span class="middle">点击此处进行人机识别验证</span>
+                                    <span class="right"><i></i></span>
+                                </div>
                             </li>
                             <li>
                                 <p>短信验证码<span> *</span></p>
@@ -45,11 +53,6 @@
                                 <label for="subs" class="subscribe"><span>订阅全时快报</span></label>
                             </li>
                         </ul>
-
-
-
-
-
                     </div>
                     <div class="register_fieldest">
                         <h2 class="legend">登录信息</h2>
@@ -57,27 +60,23 @@
                             <li>
                                 <div class="field" style="float:left;margin-right:10px">
                                     <p>密码<span> *</span></p>
-                                    <input type="password" name="password
-password" class="text">
+                                    <input type="password" name="password" class="text" id="password">
                                 </div>
                                 <div class="field" style="float:left">
                                     <p>确认密码<span> *</span></p>
-                                    <input type="password" name="
-password" class="text">
+                                    <input type="password" name="" class="text" id="password_">
                                 </div>
                             </li>
 
                         </ul>
                     </div>
-                </form>
+
             </div>
             <p style="color:red;text-align:right;padding:11px 0;">*必要字段</p>
             <p><a class ="return" href="/html/login.html"><small>«  </small>返回</a></p>
             <button type="submit" title="创建账户" class="button"><span>创建账户</span></button>
-
-
         </div>
-
+        </form>
 
          <!-- 尾部复用 -->
         <div class="footer_container"></div>
@@ -86,10 +85,8 @@ password" class="text">
 
 
 
-    <!-- <script type="text/javascript">
-        $(".carousel").carousel();
-    </script> -->
 
-<script type="text/javascript" src="../lib/requirejs/require.js" data-main="/js/login"></script>
+
+<script type="text/javascript" src="../lib/requirejs/require.js" data-main="/js/register"></script>
 </body>
 </html>

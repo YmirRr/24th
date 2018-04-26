@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>结算</title>
+    <link rel="stylesheet" type="text/css" href="/css/confirm.css">
+    <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="cart_container">
+            <div class="sheader">
+                <div class="sheader_box">
+                    <div class="slogo">
+                        <a href="/index.html"><img src="/images/logo.png" alt="全时在线"></a>
+                        <strong class="slogin">世界优品触手可及</strong>
+                    </div>
+                    <div class="toplink">
+                        <ul class="links">
+                            <li><a href="#">联系我们</a></li>
+                            <li><a href="#">我的账户</a></li>
+                            <li><a href="#">我的收藏</a></li>
+                            <li><a href="/html/login.html">登录 / 注册</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_box">
+                <div class="main">
+                    <div class="prod_list">
+                        <div class="page-title-box">
+                            <div class="page_left">确认订单</div>
+                            <div class="page_right">
+                                <span class="bg"></span>
+                                <ul>
+                                    <li style="color:#d22147;">购物车</li>
+                                    <li style="color:#d22147;">确认订单</li>
+                                    <li>支付</li>
+                                    <li>完成</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <h2 class="co-billing-form">收货人信息</h2>
+                        <div class="dizhi">
+                            <label for="cccc">从您的地址簿选择送货地址，或输入新地址。</label><br>
+                            <div class="inpdz">
+                                <select name="" id="cccc"></select>
+                            </div>
+                            <div class="xzdz">
+                                <a href="#">+新增收货地址</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="co-billing-form">配送方式</h2>
+                        <div>
+                            <select class="psfs">
+                                <option value="">德邦物流</option>
+                                <option value="">顺丰快递</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="co-billing-form">使用积分</h2>
+                        <div class="row4">
+                            <div>确认此订单您将获得 <span></span> 积分.</div>
+                            <p>您还有 100 积分可用.</p>
+                            <p>每 100 积分可以减免 1元，使用积分减免金额的最小单位是（元）。</p>
+                            <div class="useScore">
+                                <input type="text" />
+                                <button type="button" class="button"><span>使用积分</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="co-billing-form">支付方式</h2>
+                        <div class="row5">
+                            <input id="weixin" type="radio"  name="dd" checked="checked"/><label for="weixin">微信支付</label> <br>
+                            <input id="zhifubao" type="radio"  name="dd"/><label for="zhifubao">支付宝(支持网银)</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <h2 class="co-billing-form">商品明细</h2>
+                        <div class="products_container"></div>
+                        <div class="toPay">
+                            <div class="buttons-set">
+                                <label for="texta">买家留言:</label><br>
+                                <textarea id="texta" name=""></textarea>
+                            </div>
+                            <div class="buttons-set_">
+                                <p>是否忘了其他产品? <a href="/html/cart.html">查看您的购物车</a></p>
+                                <button type="submit" class="button"><span>确认订单</span></button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div class="sfooter">
+        <p>© 2018 24th.com, 版权所有.
+全时在线(中国)客户服务中心 4000-900-999     ICP备-13016379</p>
+    </div>
+
+<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/confirm"></script>
+
+<script type="text/html" id="confirm_temp">
+
+
+    <table class="cart_table"  width="100%";>
+        <thead>
+            <tr>
+                <th width="7%" align="center"></th>
+                <th width="75%" align="center">产品</th>
+                <th class="a-center" width="6%" align="center">价格</th>
+                <th class="a-center" width="4%" align="center">数量</th>
+                <th class="a-center" width="8%" align="center">小计</th>
+            </tr>
+        </thead>
+        <tbody class="cart_body">
+            {{each products prod}}
+            <tr>
+                <td width="7%" class="lb"><a href="#"><img class="prod_img" src="{{prod.img}}"></a></td>
+                <td width="75%" class="pTitle">
+                    <h3>{{prod.title}}</h3>
+                </td>
+                <td width="6%" class="price a-right">￥{{prod.price}}</td>
+                <td width="4%" class="input_group a-center">
+                    <div class="input_wrap">
+
+                        {{prod.amount}}
+
+                    </div>
+                </td>
+                <td width="8%" class="sub a-right">￥{{(prod.price * prod.amount).toFixed(2)}}</td>
+            </tr>
+            {{/each}}
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="a-right" colspan="4">小计</td>
+                <td class="a-right" ><span class="total">￥0.00</span></td>
+            </tr>
+            <tr>
+                <td class="a-right" colspan="4">运费</td>
+                <td class="a-right" >￥15.00</td>
+            </tr>
+            <tr class="stro">
+                <td class="a-right no-b-border" colspan="4">总计</td>
+                <td class="a-right total_">￥0.00</td>
+            </tr>
+            <tr class="stro">
+                <td class="a-right no-t-border" colspan="4">应付总额</td>
+                <td class="a-right total_" >￥0.00</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+</script>
+</body>
+</html>

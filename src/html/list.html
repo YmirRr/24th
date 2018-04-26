@@ -5,6 +5,7 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="/lib/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/header.css">
     <link rel="stylesheet" type="text/css" href="/css/footer.css">
     <link rel="stylesheet" type="text/css" href="/css/list.css">
 </head>
@@ -203,18 +204,21 @@
     </div>
 </div>
 
-<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/index"></script>
+<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/list"></script>
 
 <!-- 家居生活商品模板 -->
 <script type="text/html" id="jjsh_temp">
     {{ each products prod }}
         <li class="jjsh_product">
-            <a href="#">
-                <img src="/{{prod.img}}" class="img-responsive"/>
+            <a href="/html/detail.html">
+                <img src="/{{prod.img}}" class="pImg"/>
             </a>
             <div class="ic_caption">
                 <div class="title_box">
-                    <p>{{prod.title}}</p>
+                    <p class="pTitle">{{prod.title}}</p>
+                </div>
+                <div style="display: none">
+                    <span class="pid">{{prod.pid}}</span>
                 </div>
                 <div class="price_box">
                     <p>
